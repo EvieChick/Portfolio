@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Evie Chick</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Evie Chick</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> 
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profilepic.jpg" alt="Evie Chick profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Evie Chick</h1>
+            <p class="section__text__p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv.lnk')">
+                Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/evie-chick-97a47b36a/'">
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'"/>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+ 
+            <div class="about_section__pic-container">
+                <img src="./assets/pic.jpg" height="350" width="250" alt="Profile Picture" class="about-pic"/>
+            </div>
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="text-container">
+                        <p>
+                            Hi, I'm Evie and I am a 19 year old student with a strong interest in ...................
+                            I'm in my second year studying BSc Computer Science at the University of Birmingham.
+                            I am currently looking for an Industrial Placement where I can contribute to real-world projects
+                               and develop my technical and professional skills.
+
+                       </p>
+                        <p>
+                               Beyond coding, I enjoy playing piano and guitar, as well as keeping active through
+                                football and running. I bring the same creativity and teamwork from these activities
+                                 into my approach to technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'"/>
+    </section>
+
+    <section id="education">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Education</h1>
+
+        <div class="timeline-wrapper">
+                    <!--<div class="edu-pic">
+                        <img src="./assets/edu.png" width="50" height="50" alt="Education image"> 
+                    </div> -->
+                    <div class="timeline-box">
+
+
+                        <div class="content-box">
+                            <div class="date">
+                                <img src="./assets/calendar-alt.png" width="25" height="25" alt="Calendar image"> 
+                                2024 - 2028
+                            </div>
+                            <h3>BSc Computer Science with Industrial Placement at University of Birmingham</h3>
+                            <p>1st Year Grade: 86%<br />Modules: Object Oriented Programming (98%), Artificial Intelligence (94%), Mathematical and Logical Foundations of Computer Science (89%), Computer Systems and Professional Practice (84%), Data Structures and Algorithms (79%), Theories of Computation (76%)</p>
+                        </div>
+
+                        <div class="content-box">
+                            <div class="date">
+                                <img src="./assets/calendar-alt.png" width="25" height="25" alt="Calendar image"> 
+                                2022 - 2024
+                            </div>
+                            <h3>A Levels</h3>
+                            <p>Maths (A*), Computer Science (A*), Music (B), EPQ (A*)</p>
+                            <p>Other: Computer Science tutor for younger students completing their GCSEs, Computer Science Award for Attainment.</p>
+                        </div>
+
+                        <div class="content-box">
+                            <div class="date">
+                                <img src="./assets/calendar-alt.png" width="25" height="25" alt="Calendar image"> 
+                                2020 - 2022
+                            </div>
+                            <h3>GCSEs</h3>
+                            <p>9's: Maths, Computer Science, Physics, Chemistry, Biology, Music, History, Drama
+                            <br />8's: Further Maths, English Literature<br />7: English Language
+                            </p>
+                            <p>Other: Deputy House Captain, Music Ambassador, Community Prefect</p>
+                        </div>
+
+
+                    </div>
+        </div>
+
+
+
+        <!--
+        <div class="details-wrapper">
+            <div class="details-container"> 
+                <h3>2024BSc Computer Science with Industrial Placement at University of Birmingham</h3>
+                <p>1st Year Grade: 86%<br />Modules: Object Oriented Programming (98%), Artificial Intelligence (94%), Mathematical and Logical Foundations of Computer Science (89%), Computer Systems and Professional Practice (84%), Data Structures and Algorithms (79%), Theories of Computation (76%)</p>   
+            </div>
+            <div class="details-container"> 
+                <h3>A Levels</h3>
+                <p>Maths (A*), Computer Science (A*), Music (B), EPQ (A*)</p>
+            </div>
+            <div class="details-container"> 
+                <h3>GCSE's</h3>
+                <p>9's: Maths, Computer Science, Physics, Chemistry, Biology, Music, History, Drama
+                    <br />8's: Further Maths, English Literature<br />7: English Language
+                </p>
+            </div>
+        </div>
+        -->
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <p class="section__text__p3">(hover to find out more)</p>
+
+        <div class="image_container">
+            <div class="frankly">
+                <img class="frankly_img" src="./assets/frankly2.png" width="262.5" height="187.5" alt="Frankly Solutions Logo"/>
+                <div class="frankly_text frankly_text--blur">
+                    <div class="frankly_heading">3 Week Internship</div>
+                    <p class="frankly_description">Software development role, writing Apex APIs and test classes for a Salesforce CPQ & Revenue Cloud product deployment tool.</p>
+                </div>
+            </div>
+
+            <div class="ba">
+                <img class="ba_img" src="./assets/british-airways2.png" width="262.5" height="187.5" alt="British Airways Logo"/>
+                <div class="ba_text ba_text--blur">
+                    <div class="ba_heading">1 Week Work Experience</div>
+                    <p class="ba_description">Introduction to Engineering program, enhancing teamwork, communication, and problem-solving through hands-on projects.</p>
+                </div>
+            </div>
+
+            <div class="pwc">
+                <img class="pwc_img" src="./assets/pwc2.png" width="262.5" height="187.5" alt="PwC Logo"/>
+                <div class="pwc_text pwc_text--blur">
+                    <div class="pwc_heading">Virtual Insight Week with PwC</div>
+                    <p class="pwc_description">Gained exposure to multiple business areas through webinars and hands on tasks including a sustainability based project</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img class="box_img" src="./assets/box2.png" width="262.5" height="187.5" alt="Box Logo"/>
+                <div class="box_text box_text--blur">
+                    <div class="box_heading">Insight Week</div>
+                    <p class="box_description">Insight into Marketing, Sales, and HR through presentations, Q&As, and group projects, including designing a marketing campaign and delivering a sales pitch.</p>
+                </div>
+            </div>
+
+            <div class="met">
+                <img class="met_img" src="./assets/met-office.png" width="262.5" height="187.5" alt="Met Office Logo"/>
+                <div class="met_text met_text--blur">
+                    <div class="met_heading">Few days work experience</div>
+                    <p class="met_description">Insight into Met Office operations through presentations and meetings, while exploring advanced technology systems such as their supercomputer.</p>
+                </div>
+            </div>
+
+            <div class="olh">
+                <img class="olh_img" src="./assets/one-london-house2.png" width="262.5" height="187.5" alt="One London House Logo"/>
+                <div class="olh_text olh_text--blur">
+                    <div class="olh_heading">Ongoing webpage management</div>
+                    <p class="olh_description">Upload content and adapt copy for a UK audience, gaining technical skills and customer-focused business awareness.</p>
+                </div>
+            </div>
+
+            <div class="oxm">
+                <img class="oxm_img" src="./assets/oxford-metrics2.png" width="262.5" height="187.5" alt="Oxford Metrics Logo"/>
+                <div class="oxm_text oxm_text--blur">
+                    <div class="oxm_heading">Work experience day</div>
+                    <p class="oxm_description">Gained insight into motion sensor technology, including hardware production, system design, and AI integration.</p>
+                </div>
+            </div>
+
+            <div class="uob">
+                <img class="uob_img" src="./assets/uob2.png" width="262.5" height="187.5" alt="University of Birmingham Logo"/>
+                <div class="uob_text uob_text--blur">
+                    <div class="uob_heading">Computer Science Student Ambassador</div>
+                    <p class="uob_description">Represent and promote the School of Computer Science to prospective students and families through open days, webinars, and newsletters.</p>
+                </div>
+            </div>
+
+            <div class="guild">
+                <img class="guild_img" src="./assets/guild.png" width="262.5" height="187.5" alt="UoB Guild of Students Logo"/>
+                <div class="guild_text guild_text--blur">
+                    <div class="guild_heading">Tech Services Job</div>
+                    <p class="guild_description">Set up technical equipment, controlling the sound and lighting for events at the Student Union, including drama shows and club nights.</p>
+                </div>
+            </div>
+
+            
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>
+    </section>
+
+    <section id="skills">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>Apex</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Soft Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>Communication</h3>
+                                <p>
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>Teamwork</h3>
+                                <p>
+
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>Problem Solving</h3>
+                                <p>
+
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>Organisation</h3>
+                                <p>
+
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>Resilience</h3>
+                                <p>
+
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon"/>
+                            <div>
+                                <h3>Critical Thinking</h3>
+                                <p>
+
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <video controls width="500" height="400" >
+                            <source src="./assets/Police_Chase_Game.mp4" type="video/mp4">
+                            Your browser does not support the video tag
+                        </video>
+                    </div>
+                    <h2 class="skills-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/documentation.pdf')">Overview</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <video controls width="500" height="400" >
+                            <source src="./assets/Text_Based_Game.mp4" type="video/mp4">
+                            Your browser does not support the video tag
+                        </video>
+                    </div>
+                    <h2 class="skills-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/documentation2.pdf')">Overview</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p>
+                    <a href="evierosechick@gmail.com">evierosechick@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p>
+                    <a href="https://www.linkedin.com/in/evie-chick-97a47b36a/">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169 2025 Evie Chick, All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
